@@ -1,19 +1,17 @@
-Source: upstream-name
-Section: admin
+Source: labwc-tweaks
+Section: utils
 Priority: optional
-Maintainer: name <email>
-Standards-Version: 4.6.1
-Build-Depends: debhelper-compat (= 13)
+Maintainer: ferrreo <harderthanfire@gmail.com>
+Build-Depends: debhelper-compat (= 13), meson, libgtk-3-dev, libxml2-dev, libgio2.0-cil-dev
+Standards-Version: 4.5.1
+Homepage: https://github.com/labwc/labwc-tweaks
 Rules-Requires-Root: no
 
-Package: pkgname1
-Architecture: linux-any
-# Delete any of these lines if un-used
-Depends: ${misc:Depends}, depends
-Recommends: high priority optdepends
-Conflicts: conflicts
-Suggests: low priority optdepends
-Breaks: also conflicts!?
-Provides: provides
-#
-Description: pkgdesc
+Package: labwc-tweaks
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: configuration gui app for labwc
+ [WIP] configuration gui app for labwc without any real plan or Acceptance
+ Criteria. It was merely written to help change themes for the purposes of
+ testing labwc during development.
+ Don't expect too much :)
