@@ -3,9 +3,9 @@
 DEBIAN_FRONTEND=noninteractive
 
 # Clone Upstream
-mkdir -p ./src-pkg-name
-cp -rvf ./debian ./src-pkg-name/
-cd ./src-pkg-name/
+git clone https://github.com/labwc/labwc-tweaks.git
+cd labwc-tweaks
+cp -rvf ../debian ./
 
 # Get build deps
 apt-get build-dep ./ -y
